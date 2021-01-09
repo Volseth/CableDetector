@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_detector"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_phonelink_ring_24"
+        android:title="@string/text_menu_detector"/>
+    <item
+        android:id="@+id/menu_calibration"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_iso_24"
+        android:title="@string/text_menu_calibration"/>
+    <item
+        android:id="@+id/menu_about"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="@string/text_menu_about"/>
+</menu>
