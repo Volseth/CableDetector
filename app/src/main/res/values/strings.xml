@@ -5,7 +5,7 @@
     <string name="text_menu_detector">Detector</string>
     <string name="calibration_start_button">Start calibration</string>
     <string name="arrow_detection">WIRE/METAL</string>
-    <string name="arrow_no_detection">NO WIRE/METAL</string>
+    <string name="arrow_no_detection">NOTHING</string>
     <string name="button_calibration_level_reset">Reset Calibration</string>
     <string name="htmlAbout">
         <![CDATA[
@@ -17,24 +17,42 @@
         }
         p{
             text-align: justify;
-            border: 3px solid #fff;
-            border-radius: 5px;
             padding: 5px;
         }
-        h1, h4, h5 {
+        h1, h2, h3, h4, h5 {
+            font-weight : bold;
+            font-family : tahoma, helvetica, sans-serif;
+            font-variant: small-caps;
             text-align: center;
+        }
+        h2 {
+            padding-top:10px;
+        }
+        #author {
+            text-align:right;
+            margin-right:5px;
+        }
+        footer {
+            position:absolute;
+            bottom:8%;
+            text-align:center;
+            text-size:5px;
+            color:gray;
         }
         </style>
         </head>
         <body>
-        <h1>Cable Detector</h1>
-        <h4>Author: Bartłomiej Duda</h4>
-        <h5>Simple app to detect metal object and wires</h5>
-        <hr>
-        <p>Application uses magnetic field sensor and magnitude value to detect objects.</p>
-        <p>Important! Connected power consumption should be > 200 Watt to detect wires. Move phone slowly for better detection.</p>
-        <p>There are some limitations of magnetic field sensor like limited range of detection and small sensitivity. Wire detection may not work perfectly!</p>
-        <hr>
+        <div class="center">
+        <h2>Information</h2>
+        <p>Simple app to detect metal object and wires.
+        Application uses magnetic field sensor and magnitude value to detect objects.</p>
+        <h3>Important!</h3>
+        <p>Connected power consumption should be > 200 Watt to detect wires. Move phone slowly for better detection.</p>
+        </div>
+        <footer>
+        There are some limitations of magnetic field sensor like limited range of detection and small sensitivity. Wire detection may not work perfectly!
+        <p id="author">Author: Bartłomiej Duda</p>
+        </footer>
         </body>
         </html>
         ]]>
@@ -48,28 +66,27 @@
             color: #fff;
         }
         p{
-            text-align: justify;
-            border: 3px solid #fff;
-            border-radius: 5px;
+            text-align: center;
             padding: 5px;
         }
-        h1, h4, h5 {
+        h1, h2, h3, h4, h5 {
+            font-weight : bold;
+            font-family : tahoma, helvetica, sans-serif;
+            font-variant: small-caps;
             text-align: center;
+        }
+        h2 {
+            padding-top:10px;
         }
         </style>
         </head>
         <body>
-        <h1>Cable Detector</h1>
-        <h4>Author: Bartłomiej Duda</h4>
-        <h5>Simple app to detect metal object and wires</h5>
-        <hr>
-        <p>Calibration may help with detecting wires.</p>
+        <h2>Calibration</h2>
         <p>To start the process put phone in orientation indicated in the picture below. Press the start button and wait until calibration ends. You\'ll be redirected to detection page after successful calibration.</p>
-        <p>There are some limitations of magnetic field sensor like limited range of detection and small sensitivity. Wire detection may not work perfectly!</p>
-        <hr>
         </body>
         </html>
         ]]>
     </string>
+    <string name="text_current">Current</string>
 
 </resources>

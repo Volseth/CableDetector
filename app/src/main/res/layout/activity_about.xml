@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background2"
+    android:background="@drawable/background"
     style="@style/AppTheme"
     tools:context=".AboutActivity">
 
     <WebView
         android:id="@+id/webAbout"
-        android:layout_width="395dp"
-        android:layout_height="645dp"
-        android:layout_marginTop="16dp"
-        android:background="@color/ap_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_fragment_graph"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
@@ -27,6 +26,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:itemIconTint="@drawable/menu_selectors"
+        app:itemTextColor="@drawable/menu_selectors"
         app:menu="@menu/bottom_navigation_menu"
         style="@style/MenuStyle"
         />

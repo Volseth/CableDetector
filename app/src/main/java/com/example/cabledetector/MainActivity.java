@@ -101,9 +101,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         super.onActivityResult(requestCode,resultCode,data);
         if(requestCode == 1) {
             if(resultCode == Activity.RESULT_OK){
-                double result = data.getDoubleExtra("average", 30.00);
-                float magXAvg = data.getFloatExtra("averageVectorX", -70);
-                float magYAvg = data.getFloatExtra("averageVectorY", -60);
+                double result = data.getDoubleExtra("average", 42.00);
+                float magXAvg = data.getFloatExtra("averageVectorX", 13);
+                float magYAvg = data.getFloatExtra("averageVectorY", -40);
                 arrowDetectionFragment.updateFragment(result, magXAvg, magYAvg);
             }
         }

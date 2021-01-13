@@ -17,29 +17,23 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintVertical_bias="0.026" />
 
     <TextView
         android:id="@+id/textView_arrow"
-        android:layout_width="240dp"
+        style="@style/shadoweffect"
+        android:layout_width="200dp"
         android:layout_height="30dp"
+        android:background="@drawable/my_border"
+        android:elevation="10dp"
         android:fontFamily="@font/digital"
         android:text=""
-        android:textSize="35dp"
-        android:textColor="@color/ap_white"
-        android:textStyle="bold"
         android:textAlignment="center"
+        android:textColor="@color/ap_white"
+        android:textSize="35sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_arrow" />
 
-    <Button
-        android:id="@+id/button_calibration_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/button_calibration_level_reset"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_arrow" />
 </androidx.constraintlayout.widget.ConstraintLayout>

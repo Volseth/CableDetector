@@ -71,14 +71,13 @@ public class GraphDetectionFragment extends Fragment {
 
         magnitudeLevelsPlot = (XYPlot) view.findViewById(R.id.plot);
 
-        magnitudeLvlSeries = new SimpleXYSeries("Magnitude");
-        magnitudeHistorySeries = new SimpleXYSeries("Magnitude");
+        magnitudeLvlSeries = new SimpleXYSeries("");
+        magnitudeHistorySeries = new SimpleXYSeries("");
         magnitudeHistorySeries.useImplicitXVals();
         magnitudeLevelsPlot.addSeries(magnitudeLvlSeries,
-                new BarFormatter(Color.rgb(0, 200, 0), Color.rgb(0, 80, 0)));
+                new LineAndPointFormatter(
+                        Color.parseColor("#FF00DDFF"), null, null, null));
 
-
-        magnitudeLevelsPlot.setDomainLabel("uT");
         magnitudeLevelsPlot.getGraph().getLineLabelStyle(XYGraphWidget.Edge.LEFT).
                 setFormat(new DecimalFormat("#"));
 
@@ -86,22 +85,23 @@ public class GraphDetectionFragment extends Fragment {
         magnitudeLevelsHistoryPlot = (XYPlot) view.findViewById(R.id.plot_history);
         magnitudeLevelsHistoryPlot.addSeries(magnitudeHistorySeries,
                 new LineAndPointFormatter(
-                        Color.rgb(217, 46, 74), null, null, null));
-        magnitudeLevelsHistoryPlot.setDomainLabel("uT");
+                        Color.parseColor("#FF00DDFF"), null, null, null));
         magnitudeLevelsHistoryPlot.getGraph().getLineLabelStyle(XYGraphWidget.Edge.LEFT).
                 setFormat(new DecimalFormat("#"));
         magnitudeLevelsHistoryPlot.getGraph().getLineLabelStyle(XYGraphWidget.Edge.BOTTOM).
                 setFormat(new DecimalFormat("#"));
 
         //VALUE RANGE
-        magnitudeLevelsPlot.setRangeBoundaries(0,350,BoundaryMode.FIXED);
-        magnitudeLevelsHistoryPlot.setRangeBoundaries(0,350,BoundaryMode.FIXED);
+        magnitudeLevelsPlot.setRangeBoundaries(0,350,BoundaryMode.AUTO);
+        magnitudeLevelsHistoryPlot.setRangeBoundaries(0,350,BoundaryMode.AUTO);
         magnitudeLevelsPlot.setRangeStep(StepMode.SUBDIVIDE,8);
         magnitudeLevelsHistoryPlot.setRangeStep(StepMode.SUBDIVIDE,8);
         magnitudeLevelsPlot.setDomainStep(StepMode.SUBDIVIDE,0);
         magnitudeLevelsHistoryPlot.setDomainStep(StepMode.SUBDIVIDE,0);
 
-
+        // LEGEND
+        magnitudeLevelsPlot.getLegend().setVisible(false);
+        magnitudeLevelsHistoryPlot.getLegend().setVisible(false);
         magnitudeLevelsPlot.setBorderPaint(null);
         magnitudeLevelsHistoryPlot.setBorderPaint(null);
 

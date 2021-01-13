@@ -1,14 +1,22 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
-        <item name="colorPrimary">@color/ap_gray</item>
+        <item name="colorPrimary">@android:color/holo_blue_dark</item>
         <item name="background">@drawable/background2</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
     </style>
 
+    <style name="shadoweffect">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">5</item>
+    </style>
+
     <style name="MenuStyle">
-        <item name="itemBackground">@drawable/background</item>
+        <item name="itemBackground">@color/menuColor</item>
         <item name="itemTextColor">@color/ap_white</item>
     </style>
     <style name="APDefacto">

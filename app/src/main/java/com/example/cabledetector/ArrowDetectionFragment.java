@@ -18,12 +18,11 @@ public class ArrowDetectionFragment extends Fragment {
 
     private ImageView arrow;
     private TextView textDetection;
-    private Button buttonResetCalibration;
     private int sensitivity=50;
     private double baseMagnitudeLevel = 42;
     private float baseMagX;
     private float baseMagY;
-    private final double DEFAULT_MAGNITUDE_LEVEL = 30.0;
+    private final double DEFAULT_MAGNITUDE_LEVEL = 42.0;
     private final float DEFAULT_VECTOR_X = 13;
     private final float DEFAULT_VECTOR_Y = -40;
     private final double MAGNITUDE_LEVEL_THRESHOLD = 1000;
@@ -39,14 +38,6 @@ public class ArrowDetectionFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_arrow_detection, container, false);
         arrow = view.findViewById(R.id.imageView_arrow);
         textDetection = view.findViewById(R.id.textView_arrow);
-        buttonResetCalibration = view.findViewById(R.id.button_calibration_reset);
-
-        buttonResetCalibration.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                updateFragment(DEFAULT_MAGNITUDE_LEVEL, DEFAULT_VECTOR_X, DEFAULT_VECTOR_Y);
-            }
-        });
         return view;
     }
     public void updateFragment(double baseMagnitudeLevel, float baseMagX, float baseMagY){
@@ -69,11 +60,11 @@ public class ArrowDetectionFragment extends Fragment {
         {
             arrow.setImageResource(R.drawable.reddot);
             textDetection.setText(R.string.arrow_detection);
-            textDetection.setBackgroundColor(Color.RED);
+            textDetection.setBackgroundResource(R.drawable.my_border);
         }
         else {
             textDetection.setText(R.string.arrow_no_detection);
-            textDetection.setBackgroundColor(Color.GREEN);
+            textDetection.setBackgroundResource(R.drawable.my_border_no_wire);
             if (maxVal == magXabs) {
 
                 if (magX >= 0) {

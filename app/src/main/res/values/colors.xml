@@ -3,4 +3,9 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="menuColor">#222222</color>
+    <color name="wire">#FF5252</color>
+    <color name="no_wire">#388E3C</color>
+    <color name="background_guage">#192E3C</color>
+    <color name="background_gradient_start">#2A11A6BA</color>
 </resources>

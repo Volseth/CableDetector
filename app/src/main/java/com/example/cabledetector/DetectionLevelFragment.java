@@ -17,9 +17,12 @@ import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.Locale;
 
+import pl.pawelkleczkowski.customgauge.CustomGauge;
+
 public class DetectionLevelFragment extends Fragment {
 
-    private TextView textViewDetectionLevel, textViewSeekBarValue;
+    private TextView textViewSeekBarValue, detectionLevelValue;
+    private CustomGauge guage;
     private SeekBar sensitivityBar;
     public static DecimalFormat DECIMAL_FORMATTER;
 
@@ -36,7 +39,8 @@ public class DetectionLevelFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_detection_level, container, false);
-        textViewDetectionLevel = view.findViewById(R.id.textView_detection_level);
+        guage = view.findViewById(R.id.gauge_level);
+        detectionLevelValue = view.findViewById(R.id.textView_current_Value);
         textViewSeekBarValue = view.findViewById(R.id.textView_seek_bar_value);
         sensitivityBar = view.findViewById(R.id.seekBar_sensitivity);
         String message = "Sensitivity: " + String.valueOf(sensitivityBar.getProgress());
@@ -44,7 +48,7 @@ public class DetectionLevelFragment extends Fragment {
 
         DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
         symbols.setDecimalSeparator('.');
-        DECIMAL_FORMATTER = new DecimalFormat("#.000", symbols);
+        DECIMAL_FORMATTER = new DecimalFormat("#", symbols);
 
         sensitivityBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -70,7 +74,8 @@ public class DetectionLevelFragment extends Fragment {
         return sensitivityBar.getProgress();
     }
     public void updateFragment(double magnitude){
-        String message = "Current: " + DECIMAL_FORMATTER.format(magnitude) + " \u00B5Tesla";
-        textViewDetectionLevel.setText(message);
+        String message = DECIMAL_FORMATTER.format(magnitude) + " \u00B5T";
+        guage.setValue(Math.min((int)magnitude,800));
+        detectionLevelValue.setText(message);
     }
 }
