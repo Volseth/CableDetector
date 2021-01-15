@@ -13,15 +13,18 @@ Application also indicates to the user where possible wire can be.
 
 ### Main app window (Arrow indicates possible direcrtion) :
 <p align="center">
-  <img height="1000px" src="s1.jpg" />
+  <img height="750px" src="s1.jpg" />
 </p>
+
 ### Wire detected:
+
 <p align="center">
-  <img height="1000px" src="s4.jpg" />
+  <img height="750px" src="s4.jpg" />
 </p>
+
 <p align="center">
-  <img height="1000px" src="s3.jpg" />
-  <img height="1000px" src="s2.jpg" />
+  <img height="750px" src="s3.jpg" />
+  <img height="750px" src="s2.jpg" />
 </p>
 
 
