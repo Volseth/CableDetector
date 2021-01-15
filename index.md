@@ -21,10 +21,10 @@ Application also indicates to the user where possible wire can be.
 <img height="750px" src="s4.jpg" />
 
 ### Calibration window and about application:
-
+<p>
 <img height="750px" src="s2.jpg" />
 <img height="750px" src="s3.jpg" />
-
+</p>
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
