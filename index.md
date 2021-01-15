@@ -20,9 +20,11 @@ Application also indicates to the user where possible wire can be.
 
 <img height="750px" src="s4.jpg" />
 
+### Calibration window and about application:
+
 <p align="center">
-  <img height="750px" src="s3.jpg" />
   <img height="750px" src="s2.jpg" />
+  <img height="750px" src="s3.jpg" />
 </p>
 
 
