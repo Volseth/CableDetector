@@ -12,19 +12,19 @@ Application has built-in functions to calibrate sensor for better detection like
 Application also indicates to the user where possible wire can be.
 
 <p align="center">
-  <img src="s1.jpg" />
+  <img height="500px" src="s1.jpg" />
 </p>
 
 <p align="center">
-  <img src="s4.jpg" />
+  <img height="500px" src="s4.jpg" />
 </p>
 
 <p align="center">
-  <img src="s3.jpg" />
+  <img height="500px" src="s3.jpg" />
 </p>
 
 <p align="center">
-  <img src="s2.jpg" />
+  <img height="500px" src="s2.jpg" />
 </p>
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
