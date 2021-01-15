@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Wire Detector</string>
+    <string name="app_name">Cable Detector</string>
     <string name="text_menu_about">About</string>
     <string name="text_menu_calibration">Calibration</string>
     <string name="text_menu_detector">Detector</string>
