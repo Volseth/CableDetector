@@ -1,10 +1,9 @@
 ## Introduction
 
-Cable Detector 
+Cable Detector is a simple app to detect metal object and wires. It uses magnetic field sensor and it's magnitude value to detect object.
 
 ### Features
 
-Cable Detector is a simple app to detect metal object and wires. It uses magnetic field sensor and it's magnitude value to detect object.
 Application has built-in functions to calibrate sensor for better detection like sensitivity and reading enviroment base magnitude field value as a base value. 
 Application also indicates to the user where possible wire can be.
 
