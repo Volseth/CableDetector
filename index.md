@@ -4,7 +4,9 @@ Cable Detector
 
 ### Features
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Cable Detector is a simple app to detect metal object and wires. It uses magnetic field sensor and it's magnitude value to detect object.
+Application has built-in functions to calibrate sensor for better detection like sensitivity and reading enviroment base magnitude field value as a base value. 
+Application also indicates to the user where possible wire can be.
 
 ```markdown
 Syntax highlighted code block
