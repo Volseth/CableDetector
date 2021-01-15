@@ -11,11 +11,14 @@ Cable Detector is a simple app to detect metal object and wires. It uses magneti
 Application has built-in functions to calibrate sensor for better detection like sensitivity and reading enviroment base magnitude field value as a base value. 
 Application also indicates to the user where possible wire can be.
 
+### Main app window (Arrow indicates possible direcrtion) :
 <p align="center">
   <img height="1000px" src="s1.jpg" />
+</p>
+### Wire detected:
+<p align="center">
   <img height="1000px" src="s4.jpg" />
 </p>
-
 <p align="center">
   <img height="1000px" src="s3.jpg" />
   <img height="1000px" src="s2.jpg" />
