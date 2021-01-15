@@ -25,7 +25,3 @@ Application also indicates to the user where possible wire can be.
 <img height="500px" src="s2.jpg" />
 <img height="500px" src="s3.jpg" />
 </p>
-
-### Application Code
-
-Application code is available on my github repository. Feel free to to visit https://github.com/Volseth/CableDetector
