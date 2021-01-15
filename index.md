@@ -13,19 +13,14 @@ Application also indicates to the user where possible wire can be.
 
 <p align="center">
   <img height="1000px" src="s1.jpg" />
-</p>
-
-<p align="center">
   <img height="1000px" src="s4.jpg" />
 </p>
 
 <p align="center">
   <img height="1000px" src="s3.jpg" />
-</p>
-
-<p align="center">
   <img height="1000px" src="s2.jpg" />
 </p>
+
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
