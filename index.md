@@ -13,17 +13,17 @@ Application also indicates to the user where possible wire can be.
 
 ### Main app window (Arrow indicates possible direcrtion) :
 
-<img height="600px" src="s1.jpg" />
+<img height="500px" src="s1.jpg" />
 
 
 ### Wire detected:
 
-<img height="600px" src="s4.jpg" />
+<img height="500px" src="s4.jpg" />
 
 ### Calibration window and about application:
 <p>
-<img height="600px" src="s2.jpg" />
-<img height="600px" src="s3.jpg" />
+<img height="500px" src="s2.jpg" />
+<img height="500px" src="s3.jpg" />
 </p>
 
 ### Application Code
