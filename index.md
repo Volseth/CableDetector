@@ -12,23 +12,21 @@ Cable Detector is a simple app to detect metal object and wires. It uses magneti
 Application has built-in functions to calibrate sensor for better detection like sensitivity and reading enviroment base magnitude field value as a base value. 
 Application also indicates to the user where possible wire can be.
 
-```markdown
-Syntax highlighted code block
+<p align="center">
+  <img src="s1.jpg" />
+</p>
 
-# Header 1
-## Header 2
-### Header 3
+<p align="center">
+  <img src="s4.jpg" />
+</p>
 
-- Bulleted
-- List
+<p align="center">
+  <img src="s3.jpg" />
+</p>
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
+<p align="center">
+  <img src="s2.jpg" />
+</p>
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
