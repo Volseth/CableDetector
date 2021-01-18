@@ -4,7 +4,7 @@ Cable Detector is made to detect metal object and wires in easy way. It uses mag
 
 ### Features
 
-<p>Application has built-in functions to calibrate sensor for better detection like sensitivity and reading enviroment base magnitude field value as a base value.</p>
+<p>Application has built-in functions to calibrate sensor for better detection like sensitivity and reading enviroment base magnitude field value as a base value. It helps users working in enviroments where base magnetic field is very high!</p>
 
 <p>Application also indicates to the user where possible wire can be.</p>
 
