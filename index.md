@@ -21,3 +21,7 @@ Cable Detector is a simple app to detect metal object and wires. It uses magneti
 <img height="500px" src="s2.jpg" />
 <img height="500px" src="s3.jpg" />
 </p>
+
+### Menu and fragments:
+
+Application uses user friendly bottom  menu that will allow you to switch between metal detector, information about application and calibration. Detector uses reusable fragments with individual styles. Fragments can be used for future improvements in application.
